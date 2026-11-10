@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Page metadata, typography, styles, and deferred landing-page interactions. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8fbf8">
+    <meta name="description" content="Personal, connected healthcare for every stage of life. Meet your care team and manage your health journey with Saman Healthcare.">
+    <title>Saman Healthcare — Care that moves with you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+    <script src="landing.js" defer></script>
+</head>
+<body>
+    <!-- Primary site navigation and account entry point. -->
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Saman Healthcare home">
+                <span class="brand-symbol" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 35 12v16L20 36.5 5 28V12L20 3.5Z" fill="currentColor"/><path d="M18 11h4v7h7v4h-7v7h-4v-7h-7v-4h7v-7Z" fill="white"/></svg>
+                </span>
+                <span>Saman<span class="brand-light"> Healthcare</span></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-menu">
+                <span></span><span></span>
+            </button>
+            <div class="nav-links" id="main-menu">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#care">Our care</a>
+                <a class="nav-link" href="#specialties">Specialties</a>
+                <a class="nav-link" href="#about">About us</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-login" href="loginround2.html">Log in <span aria-hidden="true">↗</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero copy and animated healthcare illustration. -->
+        <section class="hero section-shell" id="home">
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="eyebrow-dot"></span> Care for a healthier tomorrow</div>
+                <h1>Feel better.<br><span>Live brighter.</span></h1>
+                <p class="hero-description">Healthcare should feel human. Get expert support, thoughtful guidance, and your whole care journey in one welcoming place.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="registration.html">Start your care journey <span aria-hidden="true">↗</span></a>
+                    <a class="button button-quiet" href="#care"><span class="play-icon" aria-hidden="true">▷</span> Explore our care</a>
+                </div>
+                <div class="hero-proof">
+                    <div class="avatar-stack" aria-hidden="true">
+                        <span class="avatar avatar-one">A</span><span class="avatar avatar-two">M</span><span class="avatar avatar-three">S</span><span class="avatar avatar-plus">+</span>
+                    </div>
+                    <div><strong>Care that puts you first</strong><span>Trusted by families, every day</span></div>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Illustration of a glowing 3D heart surrounded by healthcare symbols">
+                <div class="art-halo halo-one"></div>
+                <div class="art-halo halo-two"></div>
+                <div class="orbit orbit-back"><span class="orbit-dot"></span></div>
+                <div class="orbit orbit-front"><span class="orbit-dot"></span></div>
+                <div class="float-card card-care">
+                    <span class="mini-icon icon-heart" aria-hidden="true">♥</span>
+                    <span><strong>Care, connected</strong><small>All in one place</small></span>
+                </div>
+                <div class="float-card card-pulse">
+                    <span class="pulse-label">YOUR HEALTH, IN SYNC</span>
+                    <svg viewBox="0 0 180 48" role="img" aria-label="Heartbeat line"><path d="M2 25h34l10-16 15 34 15-26 9 8h22l8-13 11 22 10-9h42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="heart-object">
+                    <div class="heart-glow"></div>
+                    <svg class="heart-svg" viewBox="0 0 400 420" role="img" aria-label="Stylized anatomical heart">
+                        <defs>
+                            <linearGradient id="heartBase" x1="92" y1="105" x2="320" y2="350" gradientUnits="userSpaceOnUse"><stop stop-color="#ff8f82"/><stop offset=".48" stop-color="#ee655d"/><stop offset="1" stop-color="#b83e50"/></linearGradient>
+                            <linearGradient id="heartLight" x1="123" y1="114" x2="252" y2="324" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd0b6"/><stop offset=".5" stop-color="#ff9b88"/><stop offset="1" stop-color="#e45f63"/></linearGradient>
+                            <linearGradient id="vessel" x1="210" y1="45" x2="273" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd7bd"/><stop offset=".5" stop-color="#f77d72"/><stop offset="1" stop-color="#b83e50"/></linearGradient>
+                            <filter id="heartShadow" x="24" y="32" width="352" height="380" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="12"/></filter>
+                        </defs>
+                        <ellipse cx="206" cy="354" rx="122" ry="22" fill="#b84a5a" opacity=".22" filter="url(#heartShadow)"/>
+                        <path d="M194 135c-29-48-8-90 22-94 32-5 47 20 40 54 24-38 62-37 73-10 14 34-11 65-42 81 49 18 76 68 66 123-12 68-84 115-144 126-48-33-113-92-115-160-2-56 35-103 100-120Z" fill="url(#heartBase)" stroke="#a64250" stroke-width="5"/>
+                        <path d="M195 155c-34 9-72 42-73 89-1 43 25 83 54 108-6-42 12-69 35-83-11-34 4-78 31-101-14-3-30-7-47-13Z" fill="url(#heartLight)" opacity=".95"/>
+                        <path d="M208 135c-20-31-21-59-6-76 13-14 32-14 42-1 11 14 4 36-4 52l19-23c15-19 36-18 43-5 8 16-9 37-26 49l-24 18" fill="none" stroke="url(#vessel)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M172 150c-5-36-22-53-43-49-18 4-21 24-13 42l23 37M282 139c5-34 21-51 40-46 17 4 17 22 8 38l-25 37" fill="none" stroke="#f58c7e" stroke-width="15" stroke-linecap="round"/>
+                        <path d="M196 177c-24 32-28 65-14 92m53-103c-20 37-16 66 2 87m28-68c-10 23-6 42 6 56m-92 22c-10 19-7 36 5 53m107-115c22 16 34 39 31 65" fill="none" stroke="#ad3549" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+                        <path d="M185 174c-13 17-18 36-16 53m80-66c-9 14-12 30-10 43m28-14c15 12 22 27 22 43m-107 28c-3 14 0 26 7 38" fill="none" stroke="#ffd0b6" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+                        <path d="M190 119c-7-15-8-25-5-34m51-34c7 10 7 20 3 33m84 36c10-12 15-23 12-31" fill="none" stroke="#fff1df" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+                    </svg>
+                </div>
+                <div class="float-card card-doctor">
+                    <span class="doctor-icon" aria-hidden="true">
+                        <svg viewBox="0 0 36 36"><circle cx="18" cy="12" r="6" fill="currentColor"/><path d="M7 31c0-6 4.9-10 11-10s11 4 11 10" fill="currentColor"/><path d="M25 8v6a4 4 0 0 0 8 0v-2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="33" cy="10" r="2" fill="currentColor"/></svg>
+                    </span>
+                    <span><strong>Here when you need us</strong><small>People-first support</small></span>
+                    <span class="online-dot" aria-label="Available"></span>
+                </div>
+                <div class="art-caption"><span>01</span><span class="caption-rule"></span><span>HEALTH, WITH HEART</span></div>
+            </div>
+            <a class="scroll-cue" href="#care"><span class="scroll-mouse" aria-hidden="true"></span> Scroll to discover</a>
+        </section>
+
+        <!-- Three concise promises that summarize the care experience. -->
+        <section class="trust-strip" aria-label="Our care promise">
+            <div class="trust-inner">
+                <p>Good care begins with <span>being there.</span></p>
+                <div class="trust-item"><span class="trust-icon">✳</span><span><strong>Expert clinicians</strong><small>Care you can trust</small></span></div>
+                <div class="trust-item"><span class="trust-icon">◷</span><span><strong>Care that fits your life</strong><small>Support on your schedule</small></span></div>
+                <div class="trust-item"><span class="trust-icon">♡</span><span><strong>Always personal</strong><small>You're more than a number</small></span></div>
+            </div>
+        </section>
+
+        <!-- Overview cards for the main services and specialties. -->
+        <section class="care-section section-shell" id="care">
+            <div class="section-heading reveal">
+                <div>
+                    <div class="eyebrow"><span class="eyebrow-dot"></span> A better kind of healthcare</div>
+                    <h2>Everything you need.<br><span>Nothing you don't.</span></h2>
+                </div>
+                <p>From the first question to the next step, we make it easier to feel informed, supported, and in control.</p>
+            </div>
+            <div class="care-grid">
+                <article class="care-card care-card-feature reveal">
+                    <div class="care-card-top"><span class="service-number">01 / CONNECT</span><span class="service-arrow" aria-hidden="true">↗</span></div>
+                    <div class="care-illustration connect-illustration" aria-hidden="true">
+                        <span class="connect-orb orb-a"></span><span class="connect-orb orb-b"></span><span class="connect-orb orb-c"></span>
+                        <span class="connect-line"></span><span class="connect-center">+</span>
+                    </div>
+                    <h3>Care that stays connected</h3>
+                    <p>Appointments, care team, and health details come together in one simple place.</p>
+                    <a href="loginround2.html" class="text-link">Explore your care space <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="care-card reveal" id="specialties">
+                    <div class="care-card-top"><span class="service-number">02 / EXPERTISE</span><span class="service-arrow" aria-hidden="true">↗</span></div>
+                    <div class="care-illustration specialty-illustration" aria-hidden="true">
+                        <div class="specialty-ring"><span>✳</span></div>
+                        <span class="specialty-chip chip-one">Heart health</span><span class="specialty-chip chip-two">Family care</span><span class="specialty-chip chip-three">Wellbeing</span>
+                    </div>
+                    <h3>Expertise for every you</h3>
+                    <p>Find the right support for your health today and wherever life takes you next.</p>
+                    <a href="loginround2.html" class="text-link">Meet your care team <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="care-card reveal">
+                    <div class="care-card-top"><span class="service-number">03 / YOUR PACE</span><span class="service-arrow" aria-hidden="true">↗</span></div>
+                    <div class="care-illustration journey-illustration" aria-hidden="true">
+                        <div class="journey-path"></div><span class="journey-stop stop-one">✓</span><span class="journey-stop stop-two">02</span><span class="journey-stop stop-three">03</span><span class="journey-flag">YOUR<br>JOURNEY</span>
+                    </div>
+                    <h3>Your health, your pace</h3>
+                    <p>Thoughtful next steps, clear information, and a team that listens along the way.</p>
+                    <a href="registration.html" class="text-link">Get started today <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Prominent call to action before the footer. -->
+        <section class="closing-section" id="about">
+            <div class="closing-inner section-shell reveal">
+                <div class="closing-mark" aria-hidden="true">+</div>
+                <div>
+                    <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Your next chapter starts here</div>
+                    <h2>A little more care<br>changes <em>a lot.</em></h2>
+                </div>
+                <a class="button button-light" href="registration.html">Let’s get started <span aria-hidden="true">↗</span></a>
+                <div class="closing-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact anchor, account links, and copyright information. -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner section-shell">
+            <a class="brand footer-brand" href="index.html">
+                <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5 35 12v16L20 36.5 5 28V12L20 3.5Z" fill="currentColor"/><path d="M18 11h4v7h7v4h-7v7h-4v-7h-7v-4h7v-7Z" fill="white"/></svg></span>
+                <span>Saman<span class="brand-light"> Healthcare</span></span>
+            </a>
+            <p>Care for every part of you.</p>
+            <div class="footer-links"><a href="loginround2.html">Log in</a><a href="registration.html">Create an account</a><a href="forgotpass.html">Account help</a></div>
+            <span class="copyright">© 2026 Saman Healthcare</span>
+        </div>
+    </footer>
+</body>
+</html>
